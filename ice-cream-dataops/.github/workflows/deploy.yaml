@@ -16,7 +16,8 @@ jobs:
     strategy:
       matrix:
         environment:
-           - prod
+          - test
+          - prod
     environment: ${{ matrix.environment }}
     runs-on: ubuntu-latest
     env:

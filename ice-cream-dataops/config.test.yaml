@@ -21,7 +21,7 @@ variables:
         icapi_extractors_source_id: 03a95cad-8136-40dc-b6b8-9656876d0cb9
 
         tokenUri: ${IDP_TOKEN_URL}
-        cdfProjectName: ${CDF_PROJECT}
+        cdfProjectName: cdf-bootcamp-69-test
         scopes: ${IDP_SCOPES}
         icapi_trigger_client_id: ${ICAPI_EXTRACTORS_CLIENT_ID}
         icapi_trigger_client_secret: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
