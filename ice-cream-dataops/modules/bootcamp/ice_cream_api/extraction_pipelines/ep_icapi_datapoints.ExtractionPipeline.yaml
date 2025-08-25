@@ -1,0 +1,8 @@
+externalId: ep_icapi_datapoints
+name: ICAPI Data Points Extraction Pipeline
+dataSetExternalId: {{ icapi_ds_external_id }}
+description: Extracts data points from the ICAPI
+rawTables:
+- dbName: ice-cream-factory-db
+  tableName: assets
+source: Ice Cream API
