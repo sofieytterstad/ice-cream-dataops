@@ -44,6 +44,11 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
       - name: Install Cognite Toolkit
         run: pip install cognite-toolkit==${{ env.TOOLKIT_VERSION }}
+
+      # ADD THIS STEP FOR DEBUGGING
+      - name: Check Environment Variables
+        run: echo "The value for CDF_PROJECT is: ${{ env.CDF_PROJECT }}"
+
       - name: Build Toolkit Configurations
         run: cdf build --env=${{ matrix.environment }}
       - name: Deploy Toolkit Configurations
